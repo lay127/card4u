@@ -2,7 +2,7 @@
 
 [Auxilio para escrever em markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-### Regras de Boa prática:
+## Regras de Boa prática:
 •	Usar <!DOCTYPE html>  
 •	Colocar símbolo de fechamento em tags que não fecham <tag/>  
 •	Sempre colocar a linguagem, chartset UTF-8  
@@ -11,9 +11,12 @@
 •	Nomes de atributos e seus valores não devem ser separados por espaço  
 •	Fazer indentação  
 
+## HTML
+
 ### Ícone:
 Ícone minimalista e em ico nome = favicon.ico  
 Fundo png  
+
 
 ### Tabela:
 
@@ -51,7 +54,7 @@ Fundo png
 **Name:** Nome da variável  
 **Value:** Nome dentro do botão  
 
-Para ver todos os inputs aperta aqui  
+[Para ver todos os inputs aperta aqui](https://www.w3schools.com/html/html_form_input_types.asp)  
 
 Exemplo forms de Nome:  
 < label for=”idNome” >Nome< /label >  
@@ -110,6 +113,62 @@ Exemplo forms de resetar
 ### Linkar: 
 < link rel="stylesheet" href="nome do seu arquivo.css" > Linkar css  
 < link rel="icon" type="image/x-icon" href="favicon.ico" /> Linkar icon  
+
+
+## CSS
+
+Hierarquia do css  
+Interno (tag style no head), Externo (no arquivo css) e InLine (style na linha)  
+
+Style é um parametro de css inline  
+Style em css externo é nada  
+Style css interno é uma tag  
+
+### Palheta de Cores
+@charset="UTF-8";
+
+rgb
+red green e blue
+
+#000000 preto
+#FFFFFF branco
+
+#222222 Pares iguais são cinza
+
+#FFDAD9  
+#C891AF  
+#C5CCD5  
+#9DB598  
+#EFFFF6  
+
+### Referenciar cor por nome
+
+:root {  
+-- nome da cor #000000  
+-- nome da cor #000000  
+}  
+
+### Sistema de caixa
+
+padding margem interna  
+border [borda](https://www.w3schools.com/css/css_border.asp) visivel  
+margin espaçamento  
+width largura  
+height altura  
+
+* Tags  
+
+< div >< /div > divisao  
+< header >< /header > cabeçalho  
+< nav >< /nav > menu  
+< main >< /main > principal  
+< footer >< /footer > rodape  
+
+* Extra  
+
+< article >< /article > artigos  
+< aside >< /aside > do lado  
+< setion >< /setion > seções  
 
 ### Atalhos:
 Alt + z Para o texto não vazar na tela  
