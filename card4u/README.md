@@ -19,4 +19,14 @@ Descrição do que é cada arquivo
 * image  
 
 ### Pasta de Midia
-* media  
+* media
+
+---
+
+# Inspirações
+
+[Pocamarket](https://pocamarket.com/)  
+[Shopee](https://shopee.com.br/)  
+[Kline Store](https://klinestore.com.br/)  
+[Valcegs](https://valcegs.store/)  
+
