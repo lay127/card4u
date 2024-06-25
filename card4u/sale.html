@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="generico">
+                <img style="width: 40%; height: 60%;" src="image/card4u.png" alt="card4u roxo com estrela rosa fofo" />
+            </div>
+            <div class="generico">
+                <audio controls>
+                    <source src="media/supernova.mp3" type="audio/mp3" />
+                    <source src="media/supernova.wma" type="audio/wma" />
+                    <source src="media/supernova.ogg" type="audio/ogg" />
+                    <p>Sinto muito, mas você pode escutar em Aespa no Spotify</p>
+                </audio>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Pagina inicial</a></li>
+            <li><a href="galeria.html">Anuncio</a></li>
+            <li><a href="sale.html">Vendas</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <div>
+            <h1>Criação de Anuncio:</h1>
+            <form>
+                <label for="idNome">Nome do photocard: </label>
+                <input class="nomeformulario" type="text" name="nameNome" id="idNome" />
+                <br /><br />
+                <label for="idValor">Valor: </label>
+                <input type="number" name="nameValor" id="idValor" />
+                <br /><br />
+                <label for="idSelecao">Grupo: </label>
+                <select id="idSelecao">
+                    <option value="NCT">Neo Culture Technology</option>
+                    <option value="BTS">Bangtan Boys</option>
+                    <option value="TXT">Tomorrow X Together</option>
+                    <option value="SKZ">Stray Kids</option>
+                    <option value="Aespa">Aespa</option>
+                    <option value="NewJeans">New Jeans</option>
+                    <option value="Itzy">Itzy</option>
+                    <option value="EXO">EXO</option>
+                    <option value="RedVelvet">Red Velvet</option>
+                    <option value="Riize">Riize</option>
+                    <option value="Lesserafim">Le Sserafim</option>
+                    <option value="Kissoflife">Kiss of Life</option>
+                </select>
+                <br /><br />
+                <label for="idArquivo">Imagens do produto: </label>
+                <input class="formulario" type="file" name="nameArquivo" id="idArquivo" />
+                <br /><br />
+                <label for="idDescricao">Descrição do produto: </label>
+                <input class="descricao" type="text" name="nameDescricao" id="idDescricao"
+                    placeholder="Coloque nome, grupo, se é merch, regular, coloque as principais palavras chave!" />
+                <br /><br />
+                <p>Avariado?</p>
+                <label for="idBolinhasit">Sim</label>
+                <input type="radio" name="nameBolinhasit" id="idBolinhaSim" />
+                <label for="idBolinhaNao">Não</label>
+                <input type="radio" name="nameBolinhasit" id="idBolinhaNao" />
+                <br /><br />
+                <p>Situação: </p>
+                <label for="idBolinhanac">Inter</label>
+                <input type="radio" name="nameBolinhabr" id="idBolinhanac" />
+                <label for="idBolinhaint">Nacional</label>
+                <input type="radio" name="nameBolinhabr" id="idBolinhanac" />
+                <br /><br />
+                <input type="submit" value="Postar">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
