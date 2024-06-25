@@ -128,10 +128,10 @@ Style css interno é uma tag
 @charset="UTF-8";
 
 rgb
-red green e blue
+red green e blue  
 
-#000000 preto
-#FFFFFF branco
+#000000 preto  
+#FFFFFF branco  
 
 #222222 Pares iguais são cinza
 
@@ -169,6 +169,9 @@ height altura
 < article >< /article > artigos  
 < aside >< /aside > do lado  
 < setion >< /setion > seções  
+
+Manter o header, nav e footer estaticos
+auto centraliza  
 
 ### Atalhos:
 Alt + z Para o texto não vazar na tela  
