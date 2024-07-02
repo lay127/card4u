@@ -173,6 +173,13 @@ height altura
 Manter o header, nav e footer estaticos
 auto centraliza  
 
+boxlevel uma embaixo da outra display block
+inline nevel uma do lado da outra display inline-block
+
+### Site externo
+
+target: "_black" abre pagina em outra guia
+
 ### Atalhos:
 Alt + z Para o texto não vazar na tela  
 Control + shift + p Para envelopar  
@@ -183,3 +190,5 @@ windowns + v Area de Transferencia
 
 ### Extra:
 /?size=l para baixar coisas via instagram
+a:hover pintar atras do texto selecionavel
+a:visited pintar o texto link que já foi visitado
