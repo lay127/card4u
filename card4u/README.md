@@ -29,4 +29,6 @@ Descrição do que é cada arquivo
 [Shopee](https://shopee.com.br/)  
 [Kline Store](https://klinestore.com.br/)  
 [Valcegs](https://valcegs.store/)  
+[InBloom](https://inbloomshop.com.br/)  
+[Yestoday Store](https://www.yestodaystore.com/)
 
