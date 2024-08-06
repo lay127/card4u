@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        main {
+            width: 300px;
+        }
+
+        main h1 {
+            color: #C891AF;
+            text-align: center;
+        }
+
+        main p {
+            text-align: center;
+        }
+
+        main a{
+            text-decoration: none;
+            color: #C891AF;
+        }
+
+        #loginForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #FFFFFF;
+        }
+
+        #loginForm label {
+            align-self: flex-start;
+            margin-bottom: 5px;
+        }
+
+        #loginForm input,
+        #loginForm select {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            border-top: 0.2px solid #00000045;
+            border-right: 0.2px solid #00000045;
+            border-left: 0.2px solid #00000045;
+            border-bottom: 2px solid #C891AF; /* Linha roxa embaixo */
+            box-sizing: border-box; /* Inclui padding e border no width total */
+            margin: 5px 0; /* Ajusta o espaçamento */
+        }
+
+        #loginForm button {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            cursor: pointer;
+            background-color: #C891AF;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #signupForm button:hover {
+            background-color: #FFDAD9;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input:focus{
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header1"><a href="index.html"><img style="width: 80%; height: 75%;" src="image/card4u.png" alt="card4u roxo com estrela rosa fofo" /></a></div>
+            <div class="header2">
+                <label for="idPesquisa"><img style="width: 35px; height: 35px;" src="image/lupa.png" alt="lupa roxa" /></label>
+            </div>
+            <div class="header3">
+                <input class="caixinhadepesquisa" type="text" name="namePesquisa" id="idPesquisa">
+            </div>
+            <div class="header4"><img style="width: 40px; height: 40px;" src="image/carrinho.png" alt="lupa roxa" /></div>
+        </div>
+    </header>
+
+    <nav>
+        <a class="textonav" href="index.html" rel="prev">Página Inicial</a> | <a class="textonav" href="galeria.html">Anúncios</a> | <a class="textonav" href="sale.html" rel="next">Vendas</a>
+    </nav>
+
+    <main>
+        <h1>Iniciar Sessão</h1>
+        <p>Entre com sua conta para acessar suas informações!</p>
+        <form id="loginForm">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <br />
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <br />
+            <button type="submit">Entrar</button>
+            <div class="signup-link">
+                <p>Não tem uma conta? <a href="signup.html">Criar conta</a></p>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (validateLoginForm()) {
+                alert('Login realizado com sucesso!');
+                // Aqui você pode prosseguir com o login ou qualquer outra ação
+            }
+        });
+
+        function validateLoginForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username.length < 5) {
+                alert('O nome de usuário deve ter no mínimo 5 caracteres.');
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert('A senha deve ter no mínimo 8 caracteres.');
+                return false;
+            }
+
+            // Adicione mais validações conforme necessário
+
+            return true;
+        }
+    </script>
+
+    <footer>
+        <div class="foot">
+            <div class="foot1"><h4>Quem somos nós</h4> Na <strong>Card4u</strong>, entendemos a paixão e a dedicação que envolvem o colecionismo. Por isso,
+                nossa equipe está sempre pronta para ajudar você a encontrar aquele item especial que falta na sua
+                coleção ou para sugerir novas adições que podem surpreender e encantar. Além disso, oferecemos um
+                ambiente acolhedor e uma comunidade vibrante de colecionadores que compartilham da mesma paixão.</div>
+            <div class="foot2"><h4>Menu</h4> Página Inicial <br/><br/> Anúcios <br/><br/> Photocard <br/><br/> Album <br/><br/> Lightstick <br/><br/> Postcard <br/><br/> Feedbacks</div>
+            <div class="foot2"><h4>Contato</h4> (31) 91270-7195 <br/><br/> atendimento@card4u.com</div>
+            <div class="foot2"><h4>Redes Sociais</h4>
+                <a href="https://www.twitter.com" target="_blank" rel="external noopener noreferrer"><img class="redesociais" src="image/twitter.png" alt="Twitter Logo"></a>
+                <a href="https://wa.me" target="_blank" rel="external noopener noreferrer"><img class="redesociais" src="image/whatsapp.png" alt="WhatsApp Logo"></a>
+                <a href="https://www.instagram.com" target="_blank" rel="external noopener noreferrer"><img class="redesociais" src="image/instagram.png" alt="Instagram Logo"></a>
+                <a href="https://www.tiktok.com" target="_blank" rel="external noopener noreferrer"><img class="redesociais" src="image/tiktok.png" alt="Tiktok Logo"></a>
+            </div>
+        </div>
+        <div style="background-color: #effff6; font-size: 14px; padding: 20px;">Copyright Card4u - 2024. Todos os direitos reservados.</div>
+    </footer>
+</body>
+</html>
+
+
